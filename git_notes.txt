@@ -1,0 +1,108 @@
+git Local setup
+===============
+1. download git from the below URL & install
+   https://git-scm.com/downloads
+   
+2. check if git is installed? run the below command in a cmd
+   git --version
+   
+3. for help
+   git --help
+   git help -a(q - quit)
+   git help tutorial (opens the manual page in a browser)
+   
+8.  git config -l (list of configurations)
+	git config --global --edit( i-insert make changes -->esc-->:wq)
+   
+   git config --global user.name "sanjay samantra"
+   git config --global user.email "sanjaysamantra1@gmail.com"
+   
+9. check if user info is configured
+    git config --global user.name
+	 git config --global user.email
+   
+4. create a folder
+   d:/sanjay/project1
+  
+5. initialize Git on a folder
+   git init
+   (Git now knows that it should watch the folder you initiated it on.
+	Git creates a hidden folder to keep track of changes)
+   
+6. git status
+    
+7. Staged files are files that are ready to be committed to the repository you are working on
+   git add file1.html 
+   git add . (current folder)
+   git add --all
+  
+8. git commit -m "message"
+
+9. git log (log of all commits)
+
+10. git checkout <commit code>
+    git checkout master
+	
+	
+11. git branch (to see the branches)
+	git branch branch1 (create)
+    git branch branch2
+	git branch -M main
+    git checkout master/branch1/branch2
+	git checkout -b sanjay/branch5  (create branch + checkout)
+	
+12. git checkout dev
+    git merge branch1 (branch1-->dev)
+	 
+	 
+github
+=====
+1. git remote -v
+
+2. git remote add origin git@github.com:sanjaysamantra1/HTML.git
+				(OR)
+   git remote add origin https://github.com/sanjaysamantra1/HTML.git
+   
+3. git remote rm origin (remove remote if any)
+
+4. git branch -M main/master
+
+5. git push -u origin main
+		(OR)
+   git push origin main --force
+
+6. Personal Access Token on GitHub 
+   a. From your GitHub account, go to Settings => Developer Settings => Personal Access Token => Generate New Token (Give your password) => Fillup the form => click Generate token => Copy the generated Token, 
+      it will be something like ghp_sFhFsSHhTzMDreGRLjmks4Tzuzgthdvfsrta
+   b. Go to Credential Manager from Control Panel => Windows Credentials => find git:https://github.com => Edit => On Password replace with with your GitHub Personal Access Token => You are Done
+If you don’t find git:https://github.com => Click on Add a generic credential => Internet address will be git:https://github.com and you need to type in your username and password will be your GitHub Personal Access Token => Click Ok and you are done
+
+===============================================================
+
+create a new repository on the command line
+=============================================
+echo "# react_march_2022" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sanjaysamantra1/react_march_2022.git
+git push -u origin main
+
+
+
+…or push an existing repository from the command line
+======================================================
+git remote add origin https://github.com/sanjaysamantra1/react_march_2022.git
+			(OR)
+git remote set-url https://github.com/sanjaysamantra1/react_april_2022.git
+git branch -M main
+git push -u origin main
+
+
+=============================================
+it pull {url} --rebase
+git push --set-upstream {url} master
+
+
+
