@@ -1,0 +1,23 @@
+First Time
+==========
+Open Your Project Folder in CMD and Run the below commands
+1. git init
+2. git add .
+3. git commit -m "first commit"
+4. git branch -M main
+5. git remote add origin https://github.com/sanjaysamantra1/angular_august_2022_2.git
+6. git push -u origin main
+
+while creating an angular project if you see a message git initialized successfully
+then run only the belo3 commands:
+1. git remote add origin https://github.com/sanjaysamantra1/angular_august_2022_2.git
+2. git branch -M main
+3. git push -u origin main
+
+
+Next Time
+=========
+1. git status (optional)
+2. git add .
+3. git commit -m "13 october"
+4. git push
