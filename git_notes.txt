@@ -1,3 +1,7 @@
+Git : is a A command-line software tool, Local version control system
+GitHub : is a cloud-based hosting service that lets you manage Git repositories online and collaborate with others
+
+
 git Local setup
 ===============
 1. download git from the below URL & install
